@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mobile/src/blocs/spash/splash_bloc.dart';
 import 'package:mobile/src/utils/colors.dart';
 import 'package:mobile/src/utils/styles.dart';
@@ -33,8 +34,8 @@ class _SplashWidgetState extends State<SplashWidget> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Image.asset(
-              'assets/images/oss.ico',
+            SvgPicture.asset(
+              'assets/images/oss.svg',
               width: 200.0,
               fit: BoxFit.fitWidth,
             ),
